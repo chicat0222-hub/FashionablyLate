@@ -30,7 +30,7 @@ Docker Compose version v2.39.1-desktop.1
 
 
 ER図
-![ER図](./er/FashionablyLate.drawio.svg)
+![ER図](../er/FashionablyLate.drawio.svg)
 
 
 
