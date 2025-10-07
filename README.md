@@ -29,8 +29,10 @@ Docker version 28.3.2, build 578ccf6
 Docker Compose version v2.39.1-desktop.1
 
 
-ER図
-![ER図](../er/FashionablyLate.drawio.svg)
+![ER図](public/images/FashionablyLate.drawio.png)
+
+
+
 
 
 
