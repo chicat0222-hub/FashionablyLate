@@ -1,0 +1,268 @@
+/* 全体レイアウト */
+body {
+
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    background-color: #ffffff;
+    color: #ac9078;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ヘッダー */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    border-bottom: 1px solid #fffffe;
+  }
+
+  header h1 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #a57c54;
+    margin: 0;
+  }
+h1{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.title-line {
+    border: none;
+    border-top: 2px solid #a57c54; /* 線の太さと色 */
+    width: max; /* 線の長さ */
+    margin: 5px 0px; /* 上下の余白 */
+  }
+
+
+  header button, header a {
+    background: none;
+    border: 1px solid #d8c8b6;
+    color: #a57c54;
+    border-radius: 4px;
+    padding: 6px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  header button:hover, header a:hover {
+    background-color: #f4ece6;
+  }
+
+  /* タイトル */
+  h2 {
+    text-align: center;
+    font-size: 22px;
+    margin: 30px 0;
+    color:#ac9078;
+  }
+
+
+.filter-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.export-btn {
+  margin-left: auto; /* これで右端に寄る */
+  background-color: #f0e6dc;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: #5a4635;
+  font-weight: 500;
+}
+
+  .filter-box select {
+    width: 100%;         /* 親の幅いっぱいに広げる */
+    max-width: 300px;    /* 必要に応じて最大幅を設定 */
+    box-sizing: border-box; /* paddingやborderを含めた幅調整 */
+}
+.filter-box .reset {
+    border: 1px solid #a57c54; /* 枠線の色 */
+    border-radius: 4px;        /* 角を少し丸める */
+    padding: 6px 16px;         /* 内側の余白 */
+    background-color: #d8c8b6; /* 背景色 */
+    color: #fff;               /* 文字色 */
+    text-decoration: none;     /* 下線を消す */
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.filter-box .search {
+    background-color: #7b5c3b; /* 茶色 */
+    color: #fff;               /* 文字色は白 */
+    border: 1px solid #7b5c3b; /* 枠線も同じ茶色に */
+    border-radius: 4px;        /* 角を丸くする */
+    padding: 6px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.filter-box .search:hover {
+    background-color: #a57c54; /* ホバー時に少し明るめの茶色 */
+    color: #fff;
+}
+
+.filter-box .reset:hover {
+    background-color: #cbb69e; /* ホバー時の色変更 */
+    color: #fff;
+}
+
+
+  .filter-box input,
+  .filter-box select {
+    padding: 8px 10px;
+    border: 1px solid #d8c8b6;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #5a4635;
+  }
+
+  .filter-box button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .filter-box .search {
+    background-color: #7b5c3b;
+    color: #fff;
+  }
+
+  .filter-box .reset {
+    background-color: #d8c8b6;
+    color: #fff;
+  }
+
+  /* エクスポートボタン */
+  .export-btn {
+    margin-left: 0;
+    background-color: #f0e6dc;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #5a4635;
+    font-weight: 500;
+  }
+
+  .export-btn:hover {
+    background-color: #e5d9cd;
+  }
+
+  /* テーブル */
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+
+  th, td {
+    border: 1px solid #e6d9c8;
+    padding: 12px 14px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #9c8166;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  tr:nth-child(even) {
+    background-color: #fff8f2;
+  }
+
+  /* 詳細ボタン */
+  .detail-btn {
+    border: 1px solid #d8c8b6;
+    background-color: #fff;
+    color: #a57c54;
+    border-radius: 6px;
+    padding: 5px 12px;
+    cursor: pointer;
+  }
+
+  .detail-btn:hover {
+    background-color: #f9f2ec;
+  }
+
+  /* ページネーション */
+  .pagination-wrapper {
+    display: flex;
+    justify-content: flex-end; /* 左寄せ */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 40px; /* 右側の余白を追加 */
+}
+
+.pagination .page-item .page-link {
+    padding: 4px 8px;           /* 枠内の余白を小さく */
+    font-size: 12px;            /* 文字を小さく */
+    border: 1px solid #d8c8b6;
+    border-radius: 4px;
+
+}
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 8px;
+  }
+
+  .pagination button {
+    border: 1px solid #d8c8b6;
+    background-color: #fff;
+    color: #a57c54;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .pagination button.active,
+  .pagination button:hover {
+    background-color: #a57c54;
+    color: #fff;
+  }
+
+  .pagination li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.pagination li a,
+.pagination li span {
+    display: block;
+    padding: 8px 12px;
+    border: 1px solid #d8c8b6; /* 四角の枠線 */
+    border-radius: 4px;
+    text-decoration: none;
+    color: #a57c54;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+/* ホバー時 */
+.pagination li a:hover {
+    background-color: #f4ece6;
+    color: #7b5c3b;
+}
+
+/* 現在ページ */
+.pagination li.active span {
+    background-color: #a57c54; /* 現在ページの背景色 */
+    color: #fff;               /* 文字色 */
+    border-color: #a57c54;
+}
+

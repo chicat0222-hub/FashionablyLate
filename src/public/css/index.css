@@ -1,0 +1,109 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #f9f9f9;
+  color: rgb(122, 104, 64);
+  margin: 0;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 見出し */
+h1 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* フォーム全体 */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.text-danger {
+  color: #d9534f;
+}
+
+/* 入力欄 */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #333;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* 電話番号（3分割用） */
+.d-flex input {
+  flex: 1;
+}
+
+/* ラジオボタン */
+input[type="radio"] {
+  margin-right: 6px;
+  transform: scale(1.1);
+}
+.form-group .col-sm-10 label {
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+/* ボタン */
+button[type="submit"] {
+  background: #333;
+  color: #fff;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #555;
+}
+
+/* 中央揃え */
+.text-center {
+  text-align: center;
+}

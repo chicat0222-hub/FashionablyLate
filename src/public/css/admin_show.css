@@ -1,0 +1,42 @@
+/* モーダルの外側（デフォルト非表示） */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.6);
+  }
+
+  /* :target でアンカー指定されたときに表示 */
+  .modal:target {
+    display: block;
+  }
+
+  /* モーダルの中身 */
+  .modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  /* 閉じるリンク */
+  .close {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .close:hover {
+    background: #555;
+  }

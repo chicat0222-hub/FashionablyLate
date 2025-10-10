@@ -1,0 +1,56 @@
+body {
+  font-family: "Hiragino Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* 横中央 */
+  align-items: center;     /* 縦中央 */
+  position: relative;
+  flex-direction: column;  /* 縦並びに */
+}
+
+/* 背景の「Thank you」 */
+body::before {
+  content: "Thank you";
+  position: absolute;
+  font-size: 150px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.03);
+  z-index: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* メッセージとボタンをまとめる */
+.center {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* メッセージ */
+.message {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+/* HOMEボタン */
+a.btn {
+  display: inline-block;
+  padding: 12px 36px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+  margin-left:80px;
+}
+
+a.btn:hover {
+  background-color: #555;
+}
